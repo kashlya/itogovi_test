@@ -1,9 +1,5 @@
-def line(dlina, puti, simvol):
-    if puti == "бок":
-        print(simvol * dlina)
-    elif puti == "низ":
-        for i in range(dlina):
-            print(simvol)
+def chisla(pervoe, vtoroe, tretie, chetvertoe):
+    return max(pervoe, vtoroe, tretie, chetvertoe)
 
 
-line(15, "низ", "*")
+print(chisla(1, 5, 3, 2))
