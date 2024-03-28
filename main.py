@@ -1,10 +1,14 @@
-def chisla(nachalo, konez):
-    suma = 0
-    for i in range(nachalo, konez + 1):
-        suma += i
-    return suma
+def prostoe_li_chislo(chislo):
+    if chislo % 2 == 0:
+        return "false"
+    if chislo <= 1:
+        return "false"
+    if chislo == 2:
+        return "true"
+    for i in range(3, int(chislo ** 0.5) + 1, 2):
+        if chislo % i == 0:
+            return False
+    return True
 
 
-nachalo = 3
-konez = 7
-print(chisla(nachalo, konez))
+print(prostoe_li_chislo(41))
