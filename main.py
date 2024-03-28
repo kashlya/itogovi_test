@@ -1,12 +1,10 @@
-def chisla(pervoe, vtoroe, tretie, chetvertoe):
-    max_ch = pervoe
-    if vtoroe > max_ch:
-        max_ch = vtoroe
-    if tretie > max_ch:
-        max_ch = tretie
-    if chetvertoe > max_ch:
-        max_ch = chetvertoe
-    return max_ch
+def chisla(nachalo, konez):
+    suma = 0
+    for i in range(nachalo, konez + 1):
+        suma += i
+    return suma
 
 
-print(chisla(1, 5, 3, 2))
+nachalo = 3
+konez = 7
+print(chisla(nachalo, konez))
