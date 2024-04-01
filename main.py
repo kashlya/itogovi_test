@@ -1,6 +1,6 @@
-def proizvedenie_elem(spisok):
+def min_iz_spiska(spisok):
     return min(spisok)
 
 
-spisok = 1, 4, 3, 7, 3234
-print(proizvedenie_elem(spisok))
+spisok = 45, 46, 47, 0
+print(min_iz_spiska(spisok))
